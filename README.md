@@ -1,4 +1,4 @@
-## Shell Script Project
+# Shell Script Project
 
-#GitHub
+## github_scripts
 > Automation of routine github procedures
