@@ -15,7 +15,6 @@ Run the installation script
 ## How to you use:
 Type name of file depending on operation as show below:
 
-	*Synatx <script_name>*
 	$ init.sh
 	$ commit.sh
 
