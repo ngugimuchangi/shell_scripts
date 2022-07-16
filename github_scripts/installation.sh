@@ -3,7 +3,7 @@ if [-d $HOME/.local/bin]
 	cp  *.sh $HOME/.local/bin/
 	rm $HOME/.local/bin/installation.sh
 	echo "$(tput setaf 2)Sucessful installation"
-else if [ -d $HOME/bin ]
+else if [ -d $HOME/bin ]; then
 	cp  *.sh $HOME/bin/
 	rm $HOME/bin/installation.sh
 	echo "$(tput setaf 2)Sucessful installation"
