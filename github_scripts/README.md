@@ -15,21 +15,19 @@ Run the installation script installation.sh
 ## How to you use:
 Type name of file depending on operation as show below
 
-	$init.sh
-	$commit.sh
+	$ init.sh
+	$ commit.sh
 
 ## Script Functions
-> ### init.sh
->
+### init.sh
 > Shell script to automate new empty repo initialization
-> * sets primary branch name to master
+> * Sets primary branch name to master
 
 > ### commit.sh
->
-> Shell script to automate:
+Shell script to automate:
 > * git add
 > * git commit 
 > * git push
 
 ## Author
-Duncan Ngugi
+[Duncan Ngugi](https://github.com/ngugimuchangi)
