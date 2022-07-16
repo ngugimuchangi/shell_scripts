@@ -26,7 +26,7 @@ Type name of file depending on operation as show below:
 ### commit.sh
 > Shell script to automate:
 > * git add
-> * git commit 
+> * git commit
 > * git push
 
 ## Author
