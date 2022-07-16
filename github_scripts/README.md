@@ -3,11 +3,11 @@
 Simple shell scripts to automate routine github operations
 
 ## Installation
-Clone the repository:
+Clone this repository:
 
-	$ git clone https://github.com/ngugimuchangi/shell_scripts.git
+	$ git clone git://github.com/ngugimuchangi/shell_scripts.git
 
-Run the installation script installation.sh
+Run the installation script
 
 	$ cd shell_scripts/github_scripts
 	$ ./installation.sh
