@@ -1,19 +1,22 @@
 #!/bin/bash
 # Script to add, commit and push changes to remote github repository
+RED=$(tput setaf 1)
+GREEN=$(tput setaf 2)
+WHITE=$(tput setaf 7)
 git add .
 if [ "$(echo $?)" = "0" ]; then
-	read -p "$(tput setaf 2)Enter commit message:$(tput setaf 7) " msg
+	read -p $GREEN"Enter commit message:$WHITE " msg
 	git commit -m "$msg"
 	if [ "$(echo $?)" = "0" ]; then
 		git push
 		if [ "$(echo $?)" = "0" ]; then
-			echo "$(tput setaf 2)Success! Remote up to date"
+			echo $GREEN"Success! Remote up to date"
 		else
-			echo "Push failed. Check git error above for more details" 1>&2
+			echo $RED"Push failed. Check git error above for more details" 1>&2
 			exit 1
 		fi
 	else
-		echo "Commit failed. Check git error above for more details" 1>&2
+		echo $RED"Commit failed. Check git error above for more details" 1>&2
 		exit 1
 	fi
 fi
