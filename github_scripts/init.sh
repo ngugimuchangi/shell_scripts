@@ -1,5 +1,8 @@
 #!/bin/bash
 # Shell script to initialize empty github repository
+RED=$(tput setaf 1)
+GREEN=$(tput setaf 2)
+WHITE=$(tput setaf 7)
 git init
 if [ "$(echo $?)" = "0" ]; then
 	touch README.md
@@ -9,16 +12,16 @@ if [ "$(echo $?)" = "0" ]; then
 		if [ "$(echo $?)" = "0" ]; then
 			git branch -M master
 			if [ "$(echo $?)" = "0" ]; then
-				read -p "$(tput setaf 2)Enter link to your remote:$(tput setaf 7) " REMOTE
-				read -p "$(tput setaf 2)Enter your personal access token:$(tput setaf 7) " PAT
+				read -p $GREEN"Enter link to your remote:$WHITE " REMOTE
+				read -p $GREEN "Enter your personal access token:$WHITE " PAT
 				REMOTE=https://$PAT@$(echo $REMOTE | cut -b 9-)
 				git remote add origin "$REMOTE"
 				if [ "$(echo $?)" = "0" ]; then
 					git push -u origin master
 					if [ "$(echo $?)" = "0" ]; then
-						echo "$(tput setaf 2)Successful initialization"
+						echo $GREEN "Successful initialization"
 					else
-						echo "Failed to initalize. Try again" 1>&2
+						echo $RED"Failed to initalize. Try again" 1>&2
 						rm -rf .git
 						exit 1
 					fi
