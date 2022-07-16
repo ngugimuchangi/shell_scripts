@@ -1,9 +1,9 @@
-#!/bin/bash
-if [-d $HOME/.local/bin]
+#!/bin/bashi -x
+if [-d "$HOME/.local/bin"] && [ !-d "$HOME/bin" ]; then
 	cp  *.sh $HOME/.local/bin/
 	rm $HOME/.local/bin/installation.sh
 	echo "$(tput setaf 2)Sucessful installation"
-elif [ -d $HOME/bin ]; then
+elif [ -d "$HOME/bin" ]; then
 	cp  *.sh $HOME/bin/
 	rm $HOME/bin/installation.sh
 	echo "$(tput setaf 2)Sucessful installation"
