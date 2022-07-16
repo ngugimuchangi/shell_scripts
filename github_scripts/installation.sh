@@ -1,7 +1,7 @@
 #!/bin/bash
 RED=$(tput setaf 1)
 GREEN=$(tput setaf 2)
-if [-d "$HOME/.local/bin"] && [ ! -d "$HOME/bin" ]; then
+if [ -d "$HOME/.local/bin" ] && [ ! -d "$HOME/bin" ]; then
 	cp *.sh $HOME/.local/bin/
 	rm $HOME/.local/bin/installation.sh
 	echo $GREEN"Sucessful installation"
