@@ -9,12 +9,13 @@ Clone this repository:
 
 Run the installation script
 
-	$ cd shell_scripts/
-	$ ./github_scripts/installation.sh
+	$ cd shell_scripts/github_scripts
+	$ ./installation.sh
 
 ## How to you use:
-Type name of file depending on operation as show below
+Type name of file depending on operation as show below:
 
+	*Synatx <script_name>*
 	$ init.sh
 	$ commit.sh
 
