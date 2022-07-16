@@ -5,12 +5,12 @@ Simple shell scripts to automate routine github operations
 ## Installation
 Clone this repository:
 
-	$ git clone git://github.com/ngugimuchangi/shell_scripts.git
+	$ git clone https://github.com/ngugimuchangi/shell_scripts.git
 
 Run the installation script
 
-	$ cd shell_scripts/github_scripts
-	$ ./installation.sh
+	$ cd shell_scripts/
+	$ ./github_scripts/installation.sh
 
 ## How to you use:
 Type name of file depending on operation as show below
