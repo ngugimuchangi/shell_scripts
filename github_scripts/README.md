@@ -4,6 +4,7 @@ Simple shell scripts to automate routine github operations
 
 ## Installation
 Clone the repository:
+
 	$ git clone https://github.com/ngugimuchangi/shell_scripts.git
 
 Run the installation script installation.sh
@@ -18,12 +19,12 @@ Type name of file depending on operation as show below
 	$commit.sh
 
 ## Script Functions
-> ** init.sh **
+> ### init.sh
 >
 > Shell script to automate new empty repo initialization
 > * sets primary branch name to master
 
-> ** commit.sh **
+> ### commit.sh
 >
 > Shell script to automate:
 > * git add
