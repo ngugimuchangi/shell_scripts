@@ -9,8 +9,10 @@ if [ "$(echo $?)" = "0" ]; then
 		if [ "$(echo $?)" = "0" ]; then
 			git branch -M master
 			if [ "$(echo $?)" = "0" ]; then
-				read -p "$(tput setaf 2)Enter link to your remote:$(tput setaf 7) " remote
-				git remote add origin "$remote"
+				read -p "$(tput setaf 2)Enter link to your remote:$(tput setaf 7) " REMOTE
+				read -p "$(tput setaf 2)Enter your personal access token:$(tput setaf 7) " PAT
+				REMOTE=https://$PAT@$(echo $REMOTE | cut -b 9-)
+				git remote add origin "$REMOTE"
 				if [ "$(echo $?)" = "0" ]; then
 					git push -u origin master
 					if [ "$(echo $?)" = "0" ]; then
