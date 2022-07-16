@@ -16,7 +16,7 @@ if [ "$(echo $?)" = "0" ]; then
 					if [ "$(echo $?)" = "0" ]; then
 						echo "$(tput setaf 2)Successful initialization"
 					else
-						echo "Failed to initalize. Try again" 1>2
+						echo "Failed to initalize. Try again" 1>&2
 						rm -rf .git
 						exit 1
 					fi
