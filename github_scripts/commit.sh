@@ -6,7 +6,7 @@ if [ "$(echo $?)" = "0" ]; then
 	if [ "$(echo $?)" = "0" ]; then
 		git push
 		if [ "$(echo $?)" = "0" ]; then
-			echo "your changes have been successfully pushed to your remote"
+			echo "\n$(tput setaf 2)Success! Remote up to date"
 		else
 			echo "push failed. check error above" 1>&2
 			exit 1
