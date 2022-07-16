@@ -13,4 +13,4 @@ else
 	echo $RED"$HOME.local/bin and $HOME./bin not found." 1>&2
 	echo -e $RED"\tcreate bin directory and try installation again" 1>&2
 fi
-rm -rf .git
+rm -rf ../.git
