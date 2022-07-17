@@ -13,7 +13,7 @@ if [ "$(echo $?)" = "0" ]; then
 			git branch -M master
 			if [ "$(echo $?)" = "0" ]; then
 				read -p $GREEN"Enter link to your remote:$WHITE " REMOTE
-				read -p $GREEN "Enter your personal access token:$WHITE " PAT
+				read -p $GREEN"Enter your personal access token:$WHITE " PAT
 				REMOTE=https://$PAT@$(echo $REMOTE | cut -b 9-)
 				git remote add origin "$REMOTE"
 				if [ "$(echo $?)" = "0" ]; then
