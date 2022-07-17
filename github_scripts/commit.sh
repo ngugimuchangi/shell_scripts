@@ -15,6 +15,8 @@ if [ "$(echo $?)" = "0" ]; then
 			echo $RED"Push failed. Check git error above for more details" 1>&2
 			exit 1
 		fi
+	elif [ "$(echo $?)" = "1" ]; then
+		echo $GREEN"Nothing to commit"
 	else
 		echo $RED"Commit failed. Check git error above for more details" 1>&2
 		exit 1
