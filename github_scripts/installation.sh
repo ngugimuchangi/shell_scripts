@@ -8,7 +8,7 @@ if [ -d "$HOME/.local/bin" ] && [ ! -d "$HOME/bin" ]; then
 elif [ -d "$HOME/bin" ]; then
 	cp *.sh $HOME/bin/
 	rm $HOME/bin/installation.sh
-	echo "$(tput setaf 2)Sucessful installation"
+	echo $GREEN"Sucessful installation"
 else
 	echo $RED"$HOME.local/bin and $HOME./bin not found." 1>&2
 	echo -e $RED"\tcreate bin directory and try installation again" 1>&2
