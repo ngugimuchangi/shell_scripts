@@ -1,4 +1,5 @@
 #!/bin/bash
+# Installation script
 RED=$(tput setaf 1)
 GREEN=$(tput setaf 2)
 if [ -d "$HOME/.local/bin" ] && [ ! -d "$HOME/bin" ]; then
