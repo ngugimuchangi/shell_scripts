@@ -2,12 +2,16 @@
 ## About
 Simple shell scripts to automate routine github operations
 
-## Installation
 Clone this repository:
 
 	$ git clone https://github.com/ngugimuchangi/shell_scripts.git
 
-Run the installation script
+## Getting Started
+Move shell scripts to either:
+	* $HOME/bin or
+	* $HOME/.local/bin
+
+Alternative way: Run the installation script
 
 	$ cd shell_scripts/github_scripts
 	$ ./installation.sh
