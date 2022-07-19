@@ -8,6 +8,7 @@ Clone this repository:
 
 ## Getting started
 Move shell scripts to either:
+
 	* $HOME/bin or
 	* $HOME/.local/bin
 
